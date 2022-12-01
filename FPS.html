@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Protocolos SOAP e REST</title>
+	</head>
+	<body>
+		<h1>Simple Object Access Protocol(SOAP)</h1>
+		<p>SOAP é um protocolo para troca de informações estruturadas em uma plataforma descentralizada e distribuída. Sua mensagem é baseada em XML, e para transmissão das mensagens utiliza o protocolo HTTP.</p>
+		<p>Uma mensagem SOAP é, de modo geral, formada por 3 elementos: SOAP Envelope, SOAP Header e SOAP Body.</p>
+		<p>Envelope: Elemento raiz da mensagem. É o que define um documento XML como uma mensagem SOAP, portanto é obrigatório para que um documento XML seja uma mensagem SOAP formatada de acordo com o padrão estabelecido.</p>
+		<p>Header: elemento opcional no XML, mas quando utilizado, é o primeiro elemento filho do elemento Envelope. Nesse elemento podemos encontrar informações extras que precisam ser passadas ao servidor, como por exemplo informações de segurança do WS-Security.</p>
+		<p>Body: elemento obrigatório que contém os dados de negócio que o servidor está esperando.</p>	
+			<img src="/home/aluno/Documentos/SOAP.png" width="300">		
+		<h2>Representational State Transfer(REST)</h2>
+		<p>REST é um estilo arquitetônico aplicado para fornecer padrões entre sistemas de computador na web, facilitando a comunicação entre eles. Os sistemas em conformidade com REST, muitas vezes conhecidos como sistemas RESTful, são reconhecidos pelo jeito como separam as preocupações do cliente e do servidor.</p>
+		<p>No estilo REST, a implementação do cliente e do servidor pode ser feita de forma independente, sem que cada um conheça o outro. Isso significa que o código do lado do cliente pode ser alterado a qualquer momento, sem afetar a operação do servidor, e o contrário também é válido.</p>
+		<p>Ao utilizar uma interface REST, clientes diferentes atingem os mesmos pontos finais REST, executam ações iguais e recebem as mesmas respostas. Como os sistemas REST interagem por meio de operações padrão sobre recursos, eles não dependem da implementação de interfaces.</p>
+		<p>Essas restrições ajudam as aplicações RESTful a alcançar maior nível de confiabilidade, além de possibilitar um desempenho rápido e escalável. Todos os componentes podem ser gerenciados, atualizados e reutilizados sem afetar o sistema como um todo, mesmo durante a operação.</p>
+			<img src="/home/aluno/Downloads/REST.png" width="300"
+	</body>
+<style>
+	h1{color:cyan;border:2px solid #f4f5f5}
+	p{color:darkred;border;2px solid #f5f5f5}
+	h1{font-size:40px;font-style:italic}
+	p{font-size:16px;font-style:Verdana}
+	h2{color:DarkGray;border:2px solid #f4f5f5}
+	h2{font-size:40px;font-style:italic}
+</style>
